@@ -1,0 +1,44 @@
+<html>
+<title>Log</title>
+<input id="Message">
+<button onclick="SendMessage()">Send</button>
+<h1 id="Output0"></h1>
+<h1 id="Output1"></h1>
+<h1 id="Output2"></h1>
+<h1 id="Output3"></h1>
+<h1 id="Output4"></h1>
+<h1 id="Output5"></h1>
+<h1 id="Output6"></h1>
+<h1 id="Output7"></h1>
+<script>
+function SendMessage() {
+    let mess = document.getElementById("Message").value
+    out0 = document.getElementById("Output0")
+    out1 = document.getElementById("Output1")
+    out2 = document.getElementById("Output2")
+    out3 = document.getElementById("Output3")
+    out4 = document.getElementById("Output4")
+    out5 = document.getElementById("Output5")
+    out6 = document.getElementById("Output6")
+    out7 = document.getElementById("Output7")
+    
+
+    out7.innerHTML = out6.innerHTML
+    out6.innerHTML = out5.innerHTML
+    out5.innerHTML = out4.innerHTML
+    out4.innerHTML = out3.innerHTML
+    out3.innerHTML = out2.innerHTML
+    out2.innerHTML = out1.innerHTML
+    out1.innerHTML = out0.innerHTML
+    out0.innerHTML = mess
+    document.getElementById("Message").value = " "
+}
+
+</script>
+
+
+
+
+
+
+</html>
